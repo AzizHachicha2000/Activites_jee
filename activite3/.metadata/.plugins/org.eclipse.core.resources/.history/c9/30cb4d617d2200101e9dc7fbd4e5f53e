@@ -1,0 +1,10 @@
+package com.idsd.produits.web;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+@Controller
+public class Controleur {
+	@GetMapping("/affiche")
+    public String afficheMessage() {
+        return "affiche"; // Ça retourne affiche.html
+    }
+}

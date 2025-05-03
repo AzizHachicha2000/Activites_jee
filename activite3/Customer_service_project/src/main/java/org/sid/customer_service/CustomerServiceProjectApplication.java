@@ -1,0 +1,29 @@
+package org.sid.customer_service;
+
+import org.sid.customer_service.entities.Customer;
+import org.sid.customer_service.reposirtory.CustomerRepository;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+public class CustomerServiceProjectApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CustomerServiceProjectApplication.class, args);
+	}
+	@Bean
+	CommandLineRunner start(CustomerRepository customerRepository) {
+	    return args -> {
+	        customerRepository.save(new Customer(null, "mouad", "med@gmail.com"));
+	        customerRepository.save(new Customer(null, "Vassine", "hassan@gmail.com"));
+	        customerRepository.save(new Customer(null, "Salima", "salima@gmail.com"));
+	        customerRepository.save(new Customer(null, "Saltim", "Salima@gmail.com"));
+	        System.out.println("Customers saved successfully!");
+	        customerRepository.findAll().forEach(c->{
+	        	System.out.println(c.toString());
+	        });
+	    };
+}
+}

@@ -1,0 +1,5 @@
+package org.example.billingservice.controller;
+
+public class BillController {
+
+}

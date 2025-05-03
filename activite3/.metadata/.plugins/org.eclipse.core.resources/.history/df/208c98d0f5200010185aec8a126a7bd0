@@ -1,0 +1,5 @@
+package org.example.keynoteservice.controller;
+
+public class KeynoteController {
+
+}

@@ -1,0 +1,5 @@
+package org.sid.customer_service.entities;
+
+public class Customer {
+
+}

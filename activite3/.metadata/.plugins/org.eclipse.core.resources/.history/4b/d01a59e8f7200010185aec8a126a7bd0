@@ -1,0 +1,5 @@
+package org.example.Conferenceservice.Controller;
+
+public class ConferenceController {
+
+}

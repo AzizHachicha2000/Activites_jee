@@ -1,0 +1,5 @@
+package entities.Customer;
+
+public class Customer {
+
+}

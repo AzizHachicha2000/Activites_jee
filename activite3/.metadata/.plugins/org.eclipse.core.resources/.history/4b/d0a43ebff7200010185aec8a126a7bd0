@@ -1,0 +1,5 @@
+package org.example.Conferenceservice.api;
+
+public interface ConferenceApi {
+
+}

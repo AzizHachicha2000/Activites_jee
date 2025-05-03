@@ -1,0 +1,5 @@
+package org.example.keynoteservice.entities;
+
+public class Keynote {
+
+}

@@ -1,0 +1,5 @@
+package com.idsd.produits.entities;
+
+public class Produit {
+
+}
